@@ -20,12 +20,17 @@
     <deploy.target/>
   </properties>
   <dependencies>
-        <dependency>
-                <groupId>org.sakaiproject</groupId>
-                <artifactId>sakai-warehouse</artifactId>
-                <version>${sakai.version}</version>
-                <type>pom</type>
-        </dependency>
+     <dependency>
+         <groupId>org.sakaiproject</groupId>
+         <artifactId>sakai-warehouse</artifactId>
+         <version>${sakai.version}</version>
+         <type>pom</type>
+     </dependency>
+     <dependency>
+         <groupId>org.sakaiproject</groupId>
+         <artifactId>sakai-warehouse-api</artifactId>
+         <version>${sakai.version}</version>
+     </dependency>
      <dependency>
          <groupId>org.sakaiproject</groupId>
          <artifactId>sakai-assignment-api</artifactId>
