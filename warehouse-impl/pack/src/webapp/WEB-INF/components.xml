@@ -174,18 +174,22 @@
                         <value>userEid</value>
                     </property>
                 </bean>
-                <bean class="org.sakaiproject.warehouse.impl.BeanPropertyAccess">
-                    <property name="propertyName">
-                        <value>userDisplayId</value>
-                    </property>
-                </bean>
-                <!-- need to   add Role back in and create custom property access to get teh Role.id -->
+               <bean class="org.sakaiproject.warehouse.impl.BeanPropertyAccess">
+                   <property name="propertyName">
+                       <value>userDisplayId</value>
+                   </property>
+               </bean>
+               <bean class="org.sakaiproject.warehouse.impl.NestedPropertyAccess">
+                   <property name="propertyPath">
+                       <value>role.id</value>
+                   </property>
+               </bean>
             </list>
         </property>
         <property name="insertStmt">
             <value>insert into dw_site_users
-                (site_id, user_id, user_eid, user_display_id)
-                values (?, ?, ?, ?)
+                (site_id, user_id, user_eid, user_display_id, role)
+                values (?, ?, ?, ?, ?)
             </value>
         </property>
         <property name="clearStmt">
