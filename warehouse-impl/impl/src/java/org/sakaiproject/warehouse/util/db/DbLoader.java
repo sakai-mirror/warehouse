@@ -581,7 +581,7 @@ public class DbLoader {
     }
 
      private class PropertiesHandler extends DefaultHandler {
-        private  StringBuffer charBuff = null;
+        private  StringBuilder charBuff = null;
 
          private Properties properties;
          private DbTypeMapping dbTypeMapping;
@@ -594,7 +594,7 @@ public class DbLoader {
         }
 
         public void startElement(String namespaceURI, String localName, String qName, Attributes atts) {
-            charBuff = new StringBuffer();
+            charBuff = new StringBuilder();
 
             if (qName.equals("properties"))
                 properties = new Properties();
@@ -831,7 +831,7 @@ public class DbLoader {
 
 
      class DataHandler extends DefaultHandler {
-        protected StringBuffer charBuff = null;
+        protected StringBuilder charBuff = null;
 
         protected boolean insideData = false;
         private  boolean insideTable = false;
@@ -861,7 +861,7 @@ public class DbLoader {
         }
 
         public void startElement(String namespaceURI, String localName, String qName, Attributes atts) {
-            charBuff = new StringBuffer();
+            charBuff = new StringBuilder();
 
             if (qName.equals("data"))
                 insideData = true;
@@ -923,7 +923,7 @@ public class DbLoader {
         }
 
         private String prepareInsertStatement(Row row, boolean preparedStatement) {
-            StringBuffer sb = new StringBuffer("INSERT INTO ");
+            StringBuilder sb = new StringBuilder("INSERT INTO ");
             sb.append(table.getName()).append(" (");
 
             ArrayList columns = row.getColumns();
@@ -980,7 +980,7 @@ public class DbLoader {
 
         private String prepareDeleteStatement(Row row, boolean preparedStatement) {
 
-            StringBuffer sb = new StringBuffer("DELETE FROM ");
+            StringBuilder sb = new StringBuilder("DELETE FROM ");
             sb.append(table.getName()).append(" WHERE ");
 
             ArrayList columns = row.getColumns();
@@ -1011,7 +1011,7 @@ public class DbLoader {
 
         private String prepareUpdateStatement(Row row, boolean preparedStatement) {
 
-            StringBuffer sb = new StringBuffer("UPDATE ");
+            StringBuilder sb = new StringBuilder("UPDATE ");
             sb.append(table.getName()).append(" SET ");
 
             ArrayList columns = row.getColumns();
@@ -1082,7 +1082,7 @@ public class DbLoader {
                 if (primePos == -1) {
                     return sql;
                 } else {
-                    StringBuffer sb = new StringBuffer(sql.length() + 4);
+                    StringBuilder sb = new StringBuilder(sql.length() + 4);
                     int startPos = 0;
                     do {
                         sb.append(sql.substring(startPos, primePos + 1));

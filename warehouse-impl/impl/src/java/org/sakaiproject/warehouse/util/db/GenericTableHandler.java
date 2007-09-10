@@ -47,7 +47,7 @@ public class GenericTableHandler implements ContentHandler{
    private static final int ALTER = 2;
    private static final int INDEX = 3;
    private static int mode = UNSET;
-   private static StringBuffer stmtBuffer;
+   private static StringBuilder stmtBuffer;
    private int treeLevel;
    private String tmpType = "";
    private String tmpParm = "";
@@ -75,7 +75,7 @@ public class GenericTableHandler implements ContentHandler{
    {
       if (qName.equals("statement"))
       {
-       stmtBuffer = new StringBuffer(1024);
+       stmtBuffer = new StringBuilder(1024);
        String statementType = atts.getValue("type");
 
        if (mode == UNSET || mode != DROP
