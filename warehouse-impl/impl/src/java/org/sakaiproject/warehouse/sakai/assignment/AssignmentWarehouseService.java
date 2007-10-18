@@ -12,8 +12,6 @@ import org.apache.commons.logging.LogFactory;
 import org.sakaiproject.assignment.api.Assignment;
 import org.sakaiproject.assignment.api.AssignmentService;
 import org.sakaiproject.assignment.api.AssignmentSubmission;
-import org.sakaiproject.exception.IdUnusedException;
-import org.sakaiproject.exception.PermissionException;
 import org.sakaiproject.javax.PagingPosition;
 import org.sakaiproject.site.api.Site;
 import org.sakaiproject.site.api.SiteService;
@@ -78,10 +76,6 @@ public class AssignmentWarehouseService {
 
                         assignmentStatus.add(aStats);
 
-                    } catch (IdUnusedException e) {
-                        e.printStackTrace();
-                    } catch (PermissionException e) {
-                        e.printStackTrace();
                     } catch (UserNotDefinedException e) {
 
                         e.printStackTrace();
