@@ -22,7 +22,7 @@ package org.sakaiproject.warehouse.sakai.resource;
 
 import org.sakaiproject.content.api.ContentCollection;
 import org.sakaiproject.content.api.ContentResource;
-import org.sakaiproject.content.cover.ContentHostingService;
+import org.sakaiproject.content.api.ContentHostingService;
 import org.sakaiproject.warehouse.service.PropertyAccess;
 
 /**
@@ -34,6 +34,16 @@ import org.sakaiproject.warehouse.service.PropertyAccess;
  */
 public class ResourceParentPropertyAccess implements PropertyAccess {
 
+	private ContentHostingService contentHostingService;
+
+	public ContentHostingService getContentHostingService() {
+		return contentHostingService;
+	}
+
+	public void setContentHostingService(ContentHostingService contentHostingService) {
+		this.contentHostingService = contentHostingService;
+	}
+	
     public Object getPropertyValue(Object source) throws Exception {
         String id = null;
         if (source instanceof ContentResource) {
@@ -43,6 +53,6 @@ public class ResourceParentPropertyAccess implements PropertyAccess {
             ContentCollection collection = (ContentCollection) source;
             id = collection.getId();
         }
-        return ContentHostingService.getContainingCollectionId(id);
+        return getContentHostingService().getContainingCollectionId(id);
     }
 }

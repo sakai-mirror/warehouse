@@ -52,7 +52,11 @@
       class="org.sakaiproject.warehouse.impl.BaseChildWarehouseTask">
       <property name="fields">
          <list>
-            <bean class="org.sakaiproject.warehouse.sakai.resource.ResourceUuidPropertyAccess"/>
+            <bean class="org.sakaiproject.warehouse.sakai.resource.ResourceUuidPropertyAccess">
+               <property name="contentHostingService">
+                  <ref bean="org.sakaiproject.content.api.ContentHostingService" />
+               </property>
+            </bean>
             <bean class="org.sakaiproject.warehouse.impl.BeanPropertyAccess">
                <property name="propertyName"><value>id</value></property>
             </bean>
@@ -64,7 +68,11 @@
             <bean class="org.sakaiproject.warehouse.sakai.resource.MimeTypePropertyAccess">
                <property name="subType"><value>true</value></property>
             </bean>
-            <bean class="org.sakaiproject.warehouse.sakai.resource.ResourceParentPropertyAccess"/>
+            <bean class="org.sakaiproject.warehouse.sakai.resource.ResourceParentPropertyAccess">
+               <property name="contentHostingService">
+                  <ref bean="org.sakaiproject.content.api.ContentHostingService" />
+               </property>
+            </bean>
             <bean class="org.sakaiproject.warehouse.sakai.resource.StringResourcePropertyAccess">
                <property name="propertyName"><value>namePropCreator</value></property>
             </bean>
@@ -109,11 +117,19 @@
       class="org.sakaiproject.warehouse.impl.BaseChildWarehouseTask">
       <property name="fields">
          <list>
-            <bean class="org.sakaiproject.warehouse.sakai.resource.ResourceUuidPropertyAccess"/>
-             <bean class="org.sakaiproject.warehouse.impl.BeanPropertyAccess">
+            <bean class="org.sakaiproject.warehouse.sakai.resource.ResourceUuidPropertyAccess">
+            	<property name="contentHostingService">
+            		<ref bean="org.sakaiproject.content.api.ContentHostingService" />
+            	</property>
+            </bean>
+            <bean class="org.sakaiproject.warehouse.impl.BeanPropertyAccess">
                <property name="propertyName"><value>id</value></property>
             </bean>
-            <bean class="org.sakaiproject.warehouse.sakai.resource.ResourceParentPropertyAccess"/>
+            <bean class="org.sakaiproject.warehouse.sakai.resource.ResourceParentPropertyAccess">
+               <property name="contentHostingService">
+                  <ref bean="org.sakaiproject.content.api.ContentHostingService" />
+               </property>
+            </bean>
             <bean class="org.sakaiproject.warehouse.sakai.resource.StringResourcePropertyAccess">
                <property name="propertyName"><value>namePropCreator</value></property>
             </bean>
@@ -126,7 +142,11 @@
             <bean class="org.sakaiproject.warehouse.impl.BeanPropertyAccess">
                <property name="propertyName"><value>bodySizeK</value></property>
             </bean>
-             <bean class="org.sakaiproject.warehouse.sakai.resource.ResourceSizePropertyAccess"/>
+             <bean class="org.sakaiproject.warehouse.sakai.resource.ResourceSizePropertyAccess">
+               <property name="contentHostingService">
+                  <ref bean="org.sakaiproject.content.api.ContentHostingService" />
+               </property>
+            </bean>
          </list>
       </property>
       <property name="insertStmt">

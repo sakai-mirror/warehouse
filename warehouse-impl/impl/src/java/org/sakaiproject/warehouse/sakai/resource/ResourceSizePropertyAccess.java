@@ -1,7 +1,7 @@
 package org.sakaiproject.warehouse.sakai.resource;
 
 import org.sakaiproject.content.api.ContentCollection;
-import org.sakaiproject.content.cover.ContentHostingService;
+import org.sakaiproject.content.api.ContentHostingService;
 import org.sakaiproject.warehouse.service.PropertyAccess;
 
 /**
@@ -13,9 +13,19 @@ import org.sakaiproject.warehouse.service.PropertyAccess;
  */
 public class ResourceSizePropertyAccess implements PropertyAccess {
 
-   public Object getPropertyValue(Object source) throws Exception {
+	private ContentHostingService contentHostingService;
+
+	public ContentHostingService getContentHostingService() {
+		return contentHostingService;
+	}
+
+	public void setContentHostingService(ContentHostingService contentHostingService) {
+		this.contentHostingService = contentHostingService;
+	}
+	
+    public Object getPropertyValue(Object source) throws Exception {
 
      ContentCollection collection = (ContentCollection) source;
-      return ContentHostingService.getQuota(collection);
+      return getContentHostingService().getQuota(collection);
    }
 }
