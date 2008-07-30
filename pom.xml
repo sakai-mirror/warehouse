@@ -16,21 +16,17 @@
     <url>http://sakaiproject.org/</url>
   </organization>
   <inceptionYear>2003</inceptionYear>
-  
   <scm>
     <connection>scm:svn:https://source.sakaiproject.org/svn/warehouse/trunk</connection>
     <developerConnection>scm:svn:https://source.sakaiproject.org/svn/warehouse/trunk</developerConnection>
     <url>https://source.sakaiproject.org/svn/warehouse/trunk</url>
   </scm>
-  
-
   <modules>
     <module>warehouse-api/api</module>
     <module>warehouse-impl/impl</module>
     <module>warehouse-impl/pack</module>
   </modules>
-  <dependencies>
-  </dependencies>
+  <dependencies/>
   <build>
     <resources/>
   </build>
