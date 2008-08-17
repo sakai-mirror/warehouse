@@ -28,7 +28,7 @@
     <dependency>
       <groupId>org.sakaiproject</groupId>
       <artifactId>sakai-warehouse-impl</artifactId>
-      <version>${sakai.version}</version>
+      
       <exclusions>
         <exclusion>
           <groupId>aopalliance</groupId>
@@ -51,7 +51,7 @@
     <dependency>
       <groupId>org.sakaiproject</groupId>
       <artifactId>sakai-metaobj-impl</artifactId>
-      <version>${sakai.version}</version>
+      
       <exclusions>
         <exclusion>
           <groupId>aopalliance</groupId>

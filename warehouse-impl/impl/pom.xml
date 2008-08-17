@@ -43,12 +43,12 @@
     <dependency>
       <groupId>org.sakaiproject</groupId>
       <artifactId>sakai-warehouse-api</artifactId>
-      <version>${sakai.version}</version>
+      
     </dependency>
     <dependency>
       <groupId>org.sakaiproject</groupId>
       <artifactId>sakai-assignment-api</artifactId>
-      <version>${sakai.version}</version>
+      
     </dependency>
 <!--org.sakaiprojectsakai-component${sakai.version}-->
 <!--org.sakaiprojectsakai-content-api${sakai.version}-->
@@ -64,12 +64,12 @@
     <dependency>
       <groupId>org.sakaiproject</groupId>
       <artifactId>sakai-metaobj-api</artifactId>
-      <version>${sakai.version}</version>
+      
     </dependency>
     <dependency>
       <groupId>org.sakaiproject</groupId>
       <artifactId>sakai-metaobj-impl</artifactId>
-      <version>${sakai.version}</version>
+      
     </dependency>
 <!--org.sakaiprojectsakai-db-api${sakai.version}-->
     <dependency>
