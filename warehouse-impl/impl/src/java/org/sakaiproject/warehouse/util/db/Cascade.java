@@ -36,10 +36,10 @@ public class Cascade{
 
 	protected static String cascadeConstraint(String statement){
 		if(loader.getDbName().equalsIgnoreCase("postgresql"))
-			return (statement += " CASCADE");
+			return (statement + " CASCADE");
 		else
 			if(loader.getDbName().equalsIgnoreCase("oracle"))
-				return (statement += " CASCADE CONSTRAINTS");
+				return (statement + " CASCADE CONSTRAINTS");
 		else
 			return statement;
    }
