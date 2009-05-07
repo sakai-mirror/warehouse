@@ -302,4 +302,12 @@ JServer Release 8.1.7.0.0 - Production</db-version>
       <type><generic>TINYINT</generic><local>SMALLINT</local></type>
    </db-type-mapping>   
 
+   <db-type-mapping>
+      <db-name>DB2/LINUXX8664</db-name>
+      <db-version>SQL09010</db-version>
+      <driver-name>IBM DB2 JDBC Universal Driver Architecture</driver-name>
+      <driver-version>3.1.57</driver-version>
+      <type><generic>TINYINT</generic><local>SMALLINT</local></type>
+   </db-type-mapping>
+
 </properties>
