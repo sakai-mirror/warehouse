@@ -1,0 +1,18 @@
+<projectDescription>
+  <name>sakai-warehouse-component</name>
+  <comment/>
+  <projects>
+    <project>sakai-content-util</project>
+    <project>sakai-metaobj-impl</project>
+    <project>sakai-util</project>
+    <project>sakai-warehouse-impl</project>
+  </projects>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>
