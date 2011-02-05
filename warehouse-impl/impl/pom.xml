@@ -20,10 +20,10 @@
     <deploy.target/>
   </properties>
   <dependencies>
-    <dependency>
+  <!--  <dependency>
       <groupId>net.sf.ehcache</groupId>
       <artifactId>ehcache</artifactId>
-    </dependency>
+    </dependency>-->
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate</artifactId>

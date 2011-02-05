@@ -20,7 +20,7 @@
     <deploy.target>shared</deploy.target>
   </properties>
   <dependencies>
-    <dependency>
+ <!--   <dependency>
       <groupId>net.sf.ehcache</groupId>
       <artifactId>ehcache</artifactId>
     </dependency>
@@ -31,7 +31,7 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring</artifactId>
-    </dependency>
+    </dependency>-->
     <dependency>
       <groupId>org.sakaiproject.kernel</groupId>
       <artifactId>sakai-kernel-api</artifactId>
