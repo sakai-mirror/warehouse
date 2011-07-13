@@ -45,11 +45,11 @@
       <artifactId>sakai-assignment-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.sakaiproject</groupId>
+      <groupId>org.sakaiproject.metaobj</groupId>
       <artifactId>sakai-metaobj-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.sakaiproject</groupId>
+      <groupId>org.sakaiproject.metaobj</groupId>
       <artifactId>sakai-metaobj-impl</artifactId>
     </dependency>
     <dependency>
