@@ -11,7 +11,7 @@
     <name>sakai-warehouse base pom</name>
     <groupId>org.sakaiproject.warehouse</groupId>
     <artifactId>warehouse-base</artifactId>
-  <version>2.9-SNAPSHOT</version>
+  <version>2.10-SNAPSHOT</version>
     <organization>
         <name>Sakai Project</name>
         <url>http://sakaiproject.org/</url>
@@ -27,9 +27,9 @@
     </modules>
 
     <scm>
-        <connection>scm:svn:https://source.sakaiproject.org/svn/warehouse/branches/sakai-2.9.x</connection>
-        <developerConnection>scm:svn:https://source.sakaiproject.org/svn/warehouse/branches/sakai-2.9.x</developerConnection>
-        <url>https://source.sakaiproject.org/svn/warehouse/branches/sakai-2.9.x</url>
+        <connection>scm:svn:https://source.sakaiproject.org/svn/warehouse/trunk</connection>
+        <developerConnection>scm:svn:https://source.sakaiproject.org/svn/warehouse/trunk</developerConnection>
+        <url>https://source.sakaiproject.org/svn/warehouse/trunk</url>
     </scm>
 
     <distributionManagement>
