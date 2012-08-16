@@ -5,13 +5,13 @@
     <parent>
         <groupId>org.sakaiproject</groupId>
         <artifactId>master</artifactId>
-        <version>2.9-SNAPSHOT</version>
+        <version>2.9.0-b07</version>
     </parent>
 
     <name>sakai-warehouse base pom</name>
     <groupId>org.sakaiproject.warehouse</groupId>
     <artifactId>warehouse-base</artifactId>
-  <version>2.9-SNAPSHOT</version>
+  <version>2.9.0-b07</version>
     <organization>
         <name>Sakai Project</name>
         <url>http://sakaiproject.org/</url>
