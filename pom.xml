@@ -22,7 +22,6 @@
 
     <modules>
         <module>warehouse-api/api</module>
-        <module>warehouse-assembly</module>
         <module>warehouse-impl/impl</module>
         <module>warehouse-impl/pack</module>
     </modules>
@@ -76,19 +75,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    
-    <repositories> 
-		<repository> 
-			<id>sonatype-nexus-snapshots</id> 
-			<name>Sonatype Nexus Snapshots</name> 
-			<url> https://oss.sonatype.org/content/repositories/snapshots </url> 
-			<releases> 
-				<enabled>false</enabled> 
-			</releases> 
-			<snapshots> 
-				<enabled>true</enabled> 
-			</snapshots> 
-		</repository> 
-	</repositories>
-    
 </project>
